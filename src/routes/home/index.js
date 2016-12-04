@@ -16,7 +16,7 @@ export default {
 
   path: '/',
 
-  async action() {
+  /*async action() {
     const resp = await fetch('/graphql', {
       method: 'post',
       headers: {
@@ -34,6 +34,6 @@ export default {
       title: 'React Starter Kit',
       component: <Layout><Home news={data.news} /></Layout>,
     };
-  },
+  },*/
 
 };
