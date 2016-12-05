@@ -18,6 +18,9 @@ export default function content(state = defaultState, action) {
 
     case FETCH_NEWS_SUCCESS: {
       console.log('success');
+
+      console.log(state, 'state');
+      console.log(state, 'news');
       return {
         ...state,
         news: action.payload,

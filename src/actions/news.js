@@ -9,7 +9,7 @@ import { API_KEY } from '../config'
 
 
 
-export function getNews({ path }) {
+export function getNews() {
   return async (dispatch, getState) => {
     const state = getState();
 
