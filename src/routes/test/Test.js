@@ -32,9 +32,7 @@ class Test extends React.Component {
 
   render() {
 
-    const {wheather}  = this.props;
-
-    console.log(wheather, 'nnn');
+    const { wheather }  = this.props;
 
     const renderWheather = () => {
       if (wheather) {

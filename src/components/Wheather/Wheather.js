@@ -2,14 +2,7 @@ import React from 'react'
 
 export const WheatherComponent = (props) => {
 
-
-    console.log(props, 'list aaa');
-
     const { wheather } = props
-
-    console.log(wheather, '$$$$$$$$$$$$');
-
-
 
     return (
       <div>

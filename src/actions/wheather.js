@@ -11,8 +11,6 @@ export function getWheather() {
   return async (dispatch, getState) => {
     const state = getState();
 
-    console.log(state, 'state');
-
     dispatch({
       type: FETCH_WHEATHER_START
     });

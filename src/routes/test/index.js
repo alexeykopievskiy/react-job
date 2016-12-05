@@ -11,7 +11,6 @@ export default {
 
   async action({store}) { // eslint-disable-line react/prop-types
     try {
-      console.log(getWheather, 'getw');
       await store.dispatch(getWheather());
 
       return {
