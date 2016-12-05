@@ -9,6 +9,9 @@
 
 /* eslint-disable max-len */
 
+export const API_KEY = '007df0fc6c5e4469929cad7b9aa66b2c';
+
+
 export const port = process.env.PORT || 3000;
 export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
 
