@@ -2,11 +2,10 @@ import React from 'react'
 
 export const NewsComponent = (props) => {
 
-    const { news } = props
+    const { news, style } = props
 
-    console.log(news, 'newwwwoowow');
     return (
-      <div>
+      <div className={style}>
         <p>{news.name}</p>
         <p>{news.description}</p>
       </div>

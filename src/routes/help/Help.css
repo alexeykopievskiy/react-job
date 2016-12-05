@@ -1,3 +1,5 @@
+@import '../../components/variables.css';
+
 .root {
   padding-left: 20px;
   padding-right: 20px;
@@ -8,4 +10,15 @@
   margin: 0 auto;
   padding: 0 0 40px;
   max-width: var(--max-content-width);
+}
+
+.news {
+  border: 1px solid green;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.news p{
+  margin-bottom: 5px;
 }

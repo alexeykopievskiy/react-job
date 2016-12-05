@@ -23,15 +23,11 @@ class Help extends React.Component {
   }
 
   maybeFetchData(props) {
-    const { path, locale, news, getNews } = this.props;
-
-    console.log(news,'iii news');
+    const { news, getNews } = this.props;
 
     if (!news) {
       getNews();
     }
-
-    console.log(news,'pppp');
 
   }
 
@@ -39,17 +35,11 @@ class Help extends React.Component {
 
     const {news}  = this.props;
 
-    console.log(news,'aaa news');
-
-    console.log(NewsComponent, 'NewsComponent');
-
     const renderNews = () => {
       if (news) {
         return Object.keys(news).map((key) => {
-          console.log(key, 'key');
-          console.log(news[key], 'value');
           return (
-            <NewsComponent key={key} news={news[key]} />
+            <NewsComponent key={key} news={news[key]} style={s.news}/>
           )
         })
       } else {
