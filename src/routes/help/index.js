@@ -11,7 +11,7 @@ export default {
 
   async action({ path, store }) { // eslint-disable-line react/prop-types
     try {
-      await store.dispatch(getNews({ path }));
+      await store.dispatch(getNews());
 
       console.log('help news');
       return {
