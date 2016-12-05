@@ -9,11 +9,10 @@ export default {
 
   path: '/help',
 
-  async action({ path, store }) { // eslint-disable-line react/prop-types
+  async action({store}) { // eslint-disable-line react/prop-types
     try {
       await store.dispatch(getNews());
 
-      console.log('help news');
       return {
         title,
         component: <Layout><Help title={title} /></Layout>,

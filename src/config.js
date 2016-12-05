@@ -9,7 +9,8 @@
 
 /* eslint-disable max-len */
 
-export const API_KEY = '007df0fc6c5e4469929cad7b9aa66b2c';
+export const API_KEY_NEWS = '007df0fc6c5e4469929cad7b9aa66b2c';
+export const API_KEY_WHEATHER = 'd831a94b060a1986d34981f43e75ff74';
 
 
 export const port = process.env.PORT || 3000;

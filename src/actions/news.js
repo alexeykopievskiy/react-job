@@ -4,7 +4,7 @@ import {
   FETCH_NEWS_ERROR,
 } from '../constants';
 
-import { API_KEY } from '../config'
+import { API_KEY_NEWS } from '../config'
 
 
 export function getNews() {
@@ -16,7 +16,7 @@ export function getNews() {
     });
 
     try {
-      const response = await fetch('https://newsapi.org/v1/sources?source=bbc-news&sortBy=top&apiKey=' + API_KEY)
+      const response = await fetch('https://newsapi.org/v1/sources?source=bbc-news&sortBy=top&apiKey=' + API_KEY_NEWS)
 
       const data = await response.json()
 
