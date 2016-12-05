@@ -4,6 +4,7 @@ import runtime from './runtime';
 import intl from './intl';
 import content from './content';
 import news from './news';
+import wheather from './wheather';
 
 export default combineReducers({
   user,
@@ -11,4 +12,5 @@ export default combineReducers({
   intl,
   content,
   news,
+  wheather,
 });
