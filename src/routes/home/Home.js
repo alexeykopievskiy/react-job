@@ -11,6 +11,7 @@ import React, { PropTypes } from 'react';
 import { FormattedRelative } from 'react-intl';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
+import Link from '../../components/Link';
 
 class Home extends React.Component {
   static propTypes = {
@@ -25,21 +26,14 @@ class Home extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <h1 className={s.title}>React.js News</h1>
+          <h1 className={s.title}>Список роутов</h1>
           <ul className={s.news}>
-            {this.props.news.map((item, index) => (
-              <li key={index} className={s.newsItem}>
-                <a href={item.link} className={s.newsTitle}>{item.title}</a>
-                {' '}
-                <span className={s.publishedDate}>
-                  <FormattedRelative value={item.publishedDate} />
-                </span>
-                <span
-                  className={s.newsDesc}
-                  dangerouslySetInnerHTML={{ __html: item.contentSnippet }}
-                />
-              </li>
-            ))}
+            <li className="newsItem">
+              <Link to="/help">/help route</Link>
+            </li>
+            <li className="newsItem">
+              <Link to="/test">/test route</Link>
+            </li>
           </ul>
         </div>
       </div>
