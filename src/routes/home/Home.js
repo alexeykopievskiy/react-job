@@ -14,13 +14,6 @@ import s from './Home.css';
 import Link from '../../components/Link';
 
 class Home extends React.Component {
-  static propTypes = {
-    news: PropTypes.arrayOf(PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired,
-      contentSnippet: PropTypes.string,
-    })).isRequired,
-  };
 
   render() {
     return (

@@ -8,16 +8,9 @@ import {
 
 import { selectContent } from '../reducers/content';
 
-const query = `
-  query($path:String!,$locale:String!) {
-    content(path:$path,locale:$locale) {
-      title, content,
-    }
-  }
-`;
 
 export function getContent({ path, locale, force }) {
-  return async (dispatch, getState, { graphqlRequest }) => {
+  return async (dispatch, getState) => {
     const state = getState();
 
     // eslint-disable-next-line no-param-reassign
@@ -40,7 +33,7 @@ export function getContent({ path, locale, force }) {
     });
 
     try {
-      const { data } = await graphqlRequest(query, { path, locale });
+      const { data } = {'content':'lol'}
       dispatch({
         type: FETCH_CONTENT_SUCCESS,
         payload: {
